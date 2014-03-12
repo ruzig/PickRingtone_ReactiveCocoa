@@ -13,7 +13,6 @@ NSString *const ringtoneCellIdentifier = @"OARingtonePickerViewControllerIdentif
 @interface OARingtonePickerViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *ringtoneTableView;
 @property (strong, nonatomic) NSArray *ringtones;
-@property (copy, nonatomic) NSString *selectedRingtone;
 
 @end
 
@@ -35,7 +34,6 @@ NSString *const ringtoneCellIdentifier = @"OARingtonePickerViewControllerIdentif
     // Do any additional setup after loading the view from its nib.
     self.ringtoneTableView.delegate = self;
     self.ringtoneTableView.dataSource = self;
-    [self.ringtoneTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ringtoneCellIdentifier];
 }
 
 - (NSString *)selectedRingtone
@@ -58,23 +56,25 @@ NSString *const ringtoneCellIdentifier = @"OARingtonePickerViewControllerIdentif
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ringtoneCellIdentifier forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = self.ringtones[indexPath.row];
-    if ([self.selectedRingtone isEqualToString:self.ringtones[indexPath.row]]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ringtoneCellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ringtoneCellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        //Ugly way
+        RAC(cell, accessoryType) = [RACSignal combineLatest:@[RACObserve(self, selectedRingtone), RACObserve(cell.textLabel, text)] reduce:^id(NSString *ringtone, NSString *cellRingtone){
+            if ([ringtone isEqualToString:cellRingtone]) {
+                return @(UITableViewCellAccessoryCheckmark);
+            }
+            return @(UITableViewCellAccessoryNone);
+        }];
     }
+    cell.textLabel.text = self.ringtones[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Ugly way:
     self.selectedRingtone = self.ringtones[indexPath.row];
-    [tableView reloadData];
-   [[NSNotificationCenter defaultCenter] postNotificationName:@"UPDATE_RINGTONE" object:nil userInfo:@{ @"ringtone" : self.selectedRingtone }];
 }
 
 @end
