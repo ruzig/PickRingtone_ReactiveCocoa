@@ -31,7 +31,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateRingtoneNotificationAction:) name:@"UPDATE_RINGTONE" object:nil];
+    @weakify(self);
+    [[self.ringtoneBt rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.navigationController pushViewController:self.ringtoneController animated:YES];
+    }];
+
+    [RACObserve(self.ringtoneController, selectedRingtone) subscribeNext:^(NSString  *ringtone) {
+        [self.ringtoneBt setTitle:ringtone forState:UIControlStateNormal];
+        [self.ringtoneBt setTitle:ringtone forState:UIControlStateHighlighted];
+    }];
 }
 
 - (OARingtonePickerViewController *)ringtoneController
@@ -40,23 +49,6 @@
         _ringtoneController = [[OARingtonePickerViewController alloc] init];
     }
     return _ringtoneController;
-}
-
-- (IBAction)pickRingtoneAction:(id)sender {
-    [self.navigationController pushViewController:self.ringtoneController animated:YES];
-}
-
-- (void)updateRingtoneNotificationAction:(NSNotification *)notification
-{
-    NSDictionary *info = [notification userInfo];
-    NSString *ringtone = info[@"ringtone"];
-    [self.ringtoneBt setTitle:ringtone forState:UIControlStateNormal];
-    [self.ringtoneBt setTitle:ringtone forState:UIControlStateHighlighted];
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

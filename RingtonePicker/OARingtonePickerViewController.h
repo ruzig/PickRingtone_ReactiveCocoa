@@ -10,4 +10,6 @@
 
 @interface OARingtonePickerViewController : UIViewController
 
+@property (copy, nonatomic) NSString *selectedRingtone;
+
 @end
