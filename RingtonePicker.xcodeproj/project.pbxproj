@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		172F444418D009A3006540E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F444318D009A3006540E0 /* Foundation.framework */; };
+		172F444618D009A3006540E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F444518D009A3006540E0 /* CoreGraphics.framework */; };
+		172F444818D009A3006540E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F444718D009A3006540E0 /* UIKit.framework */; };
+		172F444E18D009A3006540E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 172F444C18D009A3006540E0 /* InfoPlist.strings */; };
+		172F445018D009A3006540E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F444F18D009A3006540E0 /* main.m */; };
+		172F445418D009A3006540E0 /* OAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F445318D009A3006540E0 /* OAAppDelegate.m */; };
+		172F445618D009A3006540E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172F445518D009A3006540E0 /* Images.xcassets */; };
+		172F445D18D009A4006540E0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F445C18D009A4006540E0 /* XCTest.framework */; };
+		172F445E18D009A4006540E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F444318D009A3006540E0 /* Foundation.framework */; };
+		172F445F18D009A4006540E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172F444718D009A3006540E0 /* UIKit.framework */; };
+		172F446718D009A4006540E0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 172F446518D009A4006540E0 /* InfoPlist.strings */; };
+		172F446918D009A4006540E0 /* RingtonePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F446818D009A4006540E0 /* RingtonePickerTests.m */; };
+		172F447518D009BD006540E0 /* OAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F447318D009BD006540E0 /* OAHomeViewController.m */; };
+		172F447618D009BD006540E0 /* OAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172F447418D009BD006540E0 /* OAHomeViewController.xib */; };
+		172F447A18D00A3D006540E0 /* OARingtonePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 172F447818D00A3D006540E0 /* OARingtonePickerViewController.m */; };
+		172F447B18D00A3D006540E0 /* OARingtonePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172F447918D00A3D006540E0 /* OARingtonePickerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		172F446018D009A4006540E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 172F443818D009A3006540E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 172F443F18D009A3006540E0;
+			remoteInfo = RingtonePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		172F444018D009A3006540E0 /* RingtonePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingtonePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		172F444318D009A3006540E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		172F444518D009A3006540E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		172F444718D009A3006540E0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		172F444B18D009A3006540E0 /* RingtonePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RingtonePicker-Info.plist"; sourceTree = "<group>"; };
+		172F444D18D009A3006540E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		172F444F18D009A3006540E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		172F445118D009A3006540E0 /* RingtonePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RingtonePicker-Prefix.pch"; sourceTree = "<group>"; };
+		172F445218D009A3006540E0 /* OAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAAppDelegate.h; sourceTree = "<group>"; };
+		172F445318D009A3006540E0 /* OAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAAppDelegate.m; sourceTree = "<group>"; };
+		172F445518D009A3006540E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		172F445B18D009A4006540E0 /* RingtonePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingtonePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		172F445C18D009A4006540E0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		172F446418D009A4006540E0 /* RingtonePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RingtonePickerTests-Info.plist"; sourceTree = "<group>"; };
+		172F446618D009A4006540E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		172F446818D009A4006540E0 /* RingtonePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RingtonePickerTests.m; sourceTree = "<group>"; };
+		172F447218D009BD006540E0 /* OAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHomeViewController.h; sourceTree = "<group>"; };
+		172F447318D009BD006540E0 /* OAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHomeViewController.m; sourceTree = "<group>"; };
+		172F447418D009BD006540E0 /* OAHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAHomeViewController.xib; sourceTree = "<group>"; };
+		172F447718D00A3C006540E0 /* OARingtonePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARingtonePickerViewController.h; sourceTree = "<group>"; };
+		172F447818D00A3D006540E0 /* OARingtonePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARingtonePickerViewController.m; sourceTree = "<group>"; };
+		172F447918D00A3D006540E0 /* OARingtonePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OARingtonePickerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		172F443D18D009A3006540E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F444618D009A3006540E0 /* CoreGraphics.framework in Frameworks */,
+				172F444818D009A3006540E0 /* UIKit.framework in Frameworks */,
+				172F444418D009A3006540E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172F445818D009A4006540E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F445D18D009A4006540E0 /* XCTest.framework in Frameworks */,
+				172F445F18D009A4006540E0 /* UIKit.framework in Frameworks */,
+				172F445E18D009A4006540E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172F443718D009A3006540E0 = {
+			isa = PBXGroup;
+			children = (
+				172F444918D009A3006540E0 /* RingtonePicker */,
+				172F446218D009A4006540E0 /* RingtonePickerTests */,
+				172F444218D009A3006540E0 /* Frameworks */,
+				172F444118D009A3006540E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		172F444118D009A3006540E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				172F444018D009A3006540E0 /* RingtonePicker.app */,
+				172F445B18D009A4006540E0 /* RingtonePickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		172F444218D009A3006540E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				172F444318D009A3006540E0 /* Foundation.framework */,
+				172F444518D009A3006540E0 /* CoreGraphics.framework */,
+				172F444718D009A3006540E0 /* UIKit.framework */,
+				172F445C18D009A4006540E0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		172F444918D009A3006540E0 /* RingtonePicker */ = {
+			isa = PBXGroup;
+			children = (
+				172F445218D009A3006540E0 /* OAAppDelegate.h */,
+				172F445318D009A3006540E0 /* OAAppDelegate.m */,
+				172F445518D009A3006540E0 /* Images.xcassets */,
+				172F444A18D009A3006540E0 /* Supporting Files */,
+				172F447218D009BD006540E0 /* OAHomeViewController.h */,
+				172F447318D009BD006540E0 /* OAHomeViewController.m */,
+				172F447418D009BD006540E0 /* OAHomeViewController.xib */,
+				172F447718D00A3C006540E0 /* OARingtonePickerViewController.h */,
+				172F447818D00A3D006540E0 /* OARingtonePickerViewController.m */,
+				172F447918D00A3D006540E0 /* OARingtonePickerViewController.xib */,
+			);
+			path = RingtonePicker;
+			sourceTree = "<group>";
+		};
+		172F444A18D009A3006540E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172F444B18D009A3006540E0 /* RingtonePicker-Info.plist */,
+				172F444C18D009A3006540E0 /* InfoPlist.strings */,
+				172F444F18D009A3006540E0 /* main.m */,
+				172F445118D009A3006540E0 /* RingtonePicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		172F446218D009A4006540E0 /* RingtonePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				172F446818D009A4006540E0 /* RingtonePickerTests.m */,
+				172F446318D009A4006540E0 /* Supporting Files */,
+			);
+			path = RingtonePickerTests;
+			sourceTree = "<group>";
+		};
+		172F446318D009A4006540E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				172F446418D009A4006540E0 /* RingtonePickerTests-Info.plist */,
+				172F446518D009A4006540E0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		172F443F18D009A3006540E0 /* RingtonePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172F446C18D009A4006540E0 /* Build configuration list for PBXNativeTarget "RingtonePicker" */;
+			buildPhases = (
+				172F443C18D009A3006540E0 /* Sources */,
+				172F443D18D009A3006540E0 /* Frameworks */,
+				172F443E18D009A3006540E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingtonePicker;
+			productName = RingtonePicker;
+			productReference = 172F444018D009A3006540E0 /* RingtonePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		172F445A18D009A4006540E0 /* RingtonePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 172F446F18D009A4006540E0 /* Build configuration list for PBXNativeTarget "RingtonePickerTests" */;
+			buildPhases = (
+				172F445718D009A4006540E0 /* Sources */,
+				172F445818D009A4006540E0 /* Frameworks */,
+				172F445918D009A4006540E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				172F446118D009A4006540E0 /* PBXTargetDependency */,
+			);
+			name = RingtonePickerTests;
+			productName = RingtonePickerTests;
+			productReference = 172F445B18D009A4006540E0 /* RingtonePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		172F443818D009A3006540E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = 75Lab;
+				TargetAttributes = {
+					172F445A18D009A4006540E0 = {
+						TestTargetID = 172F443F18D009A3006540E0;
+					};
+				};
+			};
+			buildConfigurationList = 172F443B18D009A3006540E0 /* Build configuration list for PBXProject "RingtonePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 172F443718D009A3006540E0;
+			productRefGroup = 172F444118D009A3006540E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				172F443F18D009A3006540E0 /* RingtonePicker */,
+				172F445A18D009A4006540E0 /* RingtonePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		172F443E18D009A3006540E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F444E18D009A3006540E0 /* InfoPlist.strings in Resources */,
+				172F445618D009A3006540E0 /* Images.xcassets in Resources */,
+				172F447B18D00A3D006540E0 /* OARingtonePickerViewController.xib in Resources */,
+				172F447618D009BD006540E0 /* OAHomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172F445918D009A4006540E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F446718D009A4006540E0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		172F443C18D009A3006540E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F447A18D00A3D006540E0 /* OARingtonePickerViewController.m in Sources */,
+				172F445418D009A3006540E0 /* OAAppDelegate.m in Sources */,
+				172F445018D009A3006540E0 /* main.m in Sources */,
+				172F447518D009BD006540E0 /* OAHomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		172F445718D009A4006540E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172F446918D009A4006540E0 /* RingtonePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		172F446118D009A4006540E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 172F443F18D009A3006540E0 /* RingtonePicker */;
+			targetProxy = 172F446018D009A4006540E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		172F444C18D009A3006540E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172F444D18D009A3006540E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		172F446518D009A4006540E0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				172F446618D009A4006540E0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		172F446A18D009A4006540E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		172F446B18D009A4006540E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		172F446D18D009A4006540E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingtonePicker/RingtonePicker-Prefix.pch";
+				INFOPLIST_FILE = "RingtonePicker/RingtonePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		172F446E18D009A4006540E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingtonePicker/RingtonePicker-Prefix.pch";
+				INFOPLIST_FILE = "RingtonePicker/RingtonePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		172F447018D009A4006540E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RingtonePicker.app/RingtonePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingtonePicker/RingtonePicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RingtonePickerTests/RingtonePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		172F447118D009A4006540E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RingtonePicker.app/RingtonePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingtonePicker/RingtonePicker-Prefix.pch";
+				INFOPLIST_FILE = "RingtonePickerTests/RingtonePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172F443B18D009A3006540E0 /* Build configuration list for PBXProject "RingtonePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172F446A18D009A4006540E0 /* Debug */,
+				172F446B18D009A4006540E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		172F446C18D009A4006540E0 /* Build configuration list for PBXNativeTarget "RingtonePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172F446D18D009A4006540E0 /* Debug */,
+				172F446E18D009A4006540E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		172F446F18D009A4006540E0 /* Build configuration list for PBXNativeTarget "RingtonePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172F447018D009A4006540E0 /* Debug */,
+				172F447118D009A4006540E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 172F443818D009A3006540E0 /* Project object */;
+}
