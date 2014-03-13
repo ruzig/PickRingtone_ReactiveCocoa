@@ -38,6 +38,7 @@
     }];
 
     [RACObserve(self.ringtoneController, selectedRingtone) subscribeNext:^(NSString  *ringtone) {
+        @strongify(self);
         [self.ringtoneBt setTitle:ringtone forState:UIControlStateNormal];
         [self.ringtoneBt setTitle:ringtone forState:UIControlStateHighlighted];
     }];
